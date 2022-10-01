@@ -1,0 +1,41 @@
+import java.io.IOException;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.http.HttpServlet;
+
+public class FirstServ extends HttpServlet {
+
+	@Override
+	public void service(ServletRequest arg0, ServletResponse arg1) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		System.out.println("service method");
+		ServletConfig sc = getServletConfig();
+		 String dbname = sc.getInitParameter("dbname");
+		 System.out.println("coming from config param " + dbname);
+
+		ServletContext servtcx = getServletContext();
+		String value = servtcx.getInitParameter("mysql");
+		//System.out.println(sc.getServletContext().getAttribute("mysql"));
+		System.out.println("coming for context param " + value);
+	
+	}
+
+	@Override
+	public void destroy() {
+		// TODO Auto-generated method stub
+		System.out.println("destroy");
+	}
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		System.out.println("init");
+	}
+	
+	
+
+}

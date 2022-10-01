@@ -1,0 +1,59 @@
+
+
+import java.io.IOException;
+
+
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.Servlet;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class LoginFilter
+ */
+@WebServlet("/LoginFilter")
+public class LoginFilter implements Filter {
+	private static final long serialVersionUID = 1L;
+	private FilterChain chain;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public LoginFilter() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see Servlet#init(ServletConfig)
+	 */
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see Servlet#destroy()
+	 */
+	public void destroy() {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+			throws IOException, ServletException {
+		// TODO Auto-generated method stub
+		
+		String userid = arg0.getParameter("userid");
+		
+		if(userid !=null) {
+			chain.doFilter(arg0, arg1);
+			
+		}
+	}
+
+}

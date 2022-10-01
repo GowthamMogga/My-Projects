@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GET vs POST DEMO</title>
+</head>
+<body>
+
+<a href="GetHandler?name=Gowtham&Address=206+lake+avenue">Do a Servlet GET</a>
+
+	<form action="posthandler" method="post" name="frm" >
+
+	<h1>Enter Details</h1>
+	Enter Name: <input type="text" id="nameid" name="nameattr" maxlength="50" /><br>
+	Enter Address: <input type="text" name="address" id="address" maxlength="100"/><br>
+	
+	<button> </button>
+	
+
+
+
+
+</form>
+
+</body>
+</html>

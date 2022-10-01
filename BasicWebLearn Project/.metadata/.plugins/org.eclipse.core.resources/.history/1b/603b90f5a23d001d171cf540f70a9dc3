@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>Welcome to J2ee</h1>
+
+<a href="hello.html" id="linkId" name="linkname">Click-Here</a>
+
+</body>
+</html>

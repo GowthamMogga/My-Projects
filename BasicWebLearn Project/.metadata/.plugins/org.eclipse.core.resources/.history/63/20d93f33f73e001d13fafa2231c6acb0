@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<a href="dashboard?userid=jhondoe">Account Dashboard(allow filter)</a><br>
+	<a href="profile?userid=jhondoe">Account Profile(allow filter)</a><br>
+	
+</body>
+</html>
