@@ -10,9 +10,9 @@ public class Booking {
   
     
     // Booking  details
-    public static String passenger_name; //---> pname -->saikrishna
-    public static String passenger_email; //---> email -->skrishna694
-    public static String passenger_phone; //----> phone --9989300172
+    public static String passenger_name; //---> pname -->GowthamMogga
+    public static String passenger_email; //---> email -->moggagowtham@gmail.com
+    public static String passenger_phone; //----> phone --9705914973
 
     // payment details
     public static String name_on_card;
